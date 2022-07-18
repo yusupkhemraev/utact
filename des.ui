@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>666</width>
+    <height>245</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>561</width>
+    <height>203</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>12121212</width>
+    <height>12122121</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>uTact</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icons.qrc">
+    <normaloff>:/icons/icons/icon.png</normaloff>:/icons/icons/icon.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>666</width>
+     <height>245</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>666</width>
+     <height>245</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+	background-color: #1e1e1e;
+}
+
+QCheckBox{
+	color: #fff;
+}
+
+QPushButton{
+	border: none;
+	color: #fff;
+}</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="main_header">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #3c3c3c;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>9</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item alignment="Qt::AlignLeft|Qt::AlignBottom">
+        <widget class="QLabel" name="logo_name">
+         <property name="font">
+          <font>
+           <family>Fulbo Retro</family>
+           <pointsize>15</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #fff;</string>
+         </property>
+         <property name="text">
+          <string>Utact</string>
+         </property>
+         <property name="indent">
+          <number>-1</number>
+         </property>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignRight|Qt::AlignTop">
+        <widget class="QWidget" name="horizontalWidget" native="true">
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	border: none;
+	font: 16pt &quot;dripicons-v2&quot;;
+	color: #fff;
+	background-color: #3c3c3c;
+}
+
+QPushButton#close_window_button:hover{
+	background-color: rgb(232, 17, 25);
+}
+
+QPushButton#close_window_button{
+	width: 50px;
+	height: 50px;
+}
+
+QPushButton#restore_window_button{
+	width: 50px;
+	height: 50px;
+}
+QPushButton#minimize_window_button{
+	width: 50px;
+	height: 50px;
+}
+
+QPushButton#restore_window_button:hover{
+	background-color: #636363;
+}
+
+QPushButton#minimize_window_button:hover{
+	background-color: #636363;
+
+}
+
+</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="spacing">
+           <number>2</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="minimize_window_button">
+            <property name="maximumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>dripicons-v2</family>
+              <pointsize>16</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string>Свернуть</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string></string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="close_window_button">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>dripicons-v2</family>
+              <pointsize>16</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string>Закрыть</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>9</string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="flat">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="body" native="true">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="font">
+       <font>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	color: #fff;
+	font: 87 16pt &quot;Fulbo Premier&quot;;
+}
+
+QPushButton#pushButton{
+	background-color: #57bee6;
+}
+
+QPushButton#pushButton_2{
+	background-color: #57bee6;
+}
+
+QPushButton#pushButton_3{
+	background-color: #57bee6;
+}
+
+QPushButton#pushButton:disabled{
+	color: rgb(172, 172, 172);
+	background-color: rgb(63, 139, 167);
+}
+
+QPushButton#pushButton_2:disabled{
+	color: rgb(172, 172, 172);
+	background-color: rgb(63, 139, 167);
+}
+
+QPushButton#pushButton_3:disabled{
+	color: rgb(172, 172, 172);
+	background-color: rgb(63, 139, 167);
+}
+
+QPushButton#pushButton:hover{
+	background-color: #3b839d;
+}
+
+QPushButton#pushButton_2:hover{
+	background-color: #3b839d;
+}
+
+QPushButton#pushButton_3:hover{
+	background-color: #3b839d;
+}
+
+QLineEdit#lineEdit{
+	color:#fff;
+	border: none;
+	background-color: rgb(77, 77, 77);
+}
+
+QTimeEdit#timeEdit{
+	border: none;
+	color: #fff; 
+	font: 63 24pt &quot;Montserrat SemiBold&quot;;
+}
+
+QCheckBox{
+	
+	font: 63 12pt &quot;Montserrat SemiBold&quot;;
+}
+
+QCheckBox:indicator {
+	width: 161px;
+	height: 20px;
+}
+
+QCheckBox::indicator:unchecked {
+    image: url(:/icons/icons/unchecked.png);
+}
+
+QCheckBox::indicator:checked {
+	image: url(:/icons/icons/checked.png);
+}</string>
+      </property>
+      <widget class="QTimeEdit" name="timeEdit">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>140</y>
+         <width>101</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat SemiBold</family>
+         <pointsize>24</pointsize>
+         <weight>7</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="acceptDrops">
+        <bool>false</bool>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Время&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="wrapping">
+        <bool>false</bool>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+       <property name="readOnly">
+        <bool>false</bool>
+       </property>
+       <property name="buttonSymbols">
+        <enum>QAbstractSpinBox::NoButtons</enum>
+       </property>
+       <property name="accelerated">
+        <bool>false</bool>
+       </property>
+       <property name="keyboardTracking">
+        <bool>true</bool>
+       </property>
+       <property name="showGroupSeparator" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="currentSection">
+        <enum>QDateTimeEdit::HourSection</enum>
+       </property>
+       <property name="displayFormat">
+        <string>H:mm</string>
+       </property>
+       <property name="calendarPopup">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>140</y>
+         <width>131</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat SemiBold</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Запуск&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Запуск</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>548</x>
+         <y>192</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(50, 50, 50);
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+       <property name="text">
+        <string>by Khemraev Yusup</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton">
+       <property name="geometry">
+        <rect>
+         <x>530</x>
+         <y>40</y>
+         <width>101</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat SemiBold</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Указать путь до программы&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Обзор</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>140</y>
+         <width>131</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat SemiBold</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Указать другой путь&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Другой путь</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox">
+       <property name="geometry">
+        <rect>
+         <x>471</x>
+         <y>153</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoRepeatInterval">
+        <number>100</number>
+       </property>
+       <property name="tristate">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>40</y>
+         <width>471</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat SemiBold</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Путь до программы&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="placeholderText">
+        <string>Укажите путь до программы</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
